@@ -6,15 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Digikala</title>
   <link rel="icon" type="image/x-icon" href="./Images/favicon.ico">
-  <script type="module" crossorigin src="/Digikala-API/assets/index-DYi9yY3H.js"></script>
-  <link rel="stylesheet" crossorigin href="/Digikala-API/assets/index-Y_ng-VDL.css">
+  <script type="module" crossorigin src="/Digikala-API/assets/index-CZ7N-2kE.js"></script>
+  <link rel="stylesheet" crossorigin href="/Digikala-API/assets/index-BiSXW5dr.css">
 </head>
 
 <body>
   <!--Project Start-->
 
   <!--header mobile Start-->
-  <div class="lg:hidden sticky top-0 left-0 bannerZindex">
+  <div class="lg:hidden sticky top-0 left-0 bannerZindex shadow-sm pb-3 bg-white">
     <div class="header__Banner w-full h-[30px] bg-[#CC1335] flex justify-center items-center bannerZindex">
       <div class="header__Banner__CountDown w-[130px] h-[40px] flex justify-between items-center z-30">
         <div class="header__Banner__CountDown__second counter-box"></div>
@@ -24,10 +24,22 @@
         <div class="header__Banner__CountDown__hour counter-box"></div>
       </div><!--timer-->
     </div>
-    <div class="w-[95%] h-[60px] m-auto py-[10px] bg-white">
-      <input class="w-full h-[40px] bg-[#F0F0F1] rounded-[30px] px-[20px]" type="search" name="search"
-        id="headerSearch">
+    <div class="w-full flex justify-center items-center py-4 bg-white">
+      <div class="w-[95%] h-[40px] flex  bg-[#F0F0F1] rounded-3xl py-3">
+        <div class=" h-full w-[50px] flex justify-center items-center"><img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='utf-8'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2018.1.1,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%2050%2050'%20width='50px'%20height='50px'%3e%3cpath%20fill='%2382858B'%20d='M21,3C11.6,3,4,10.6,4,20s7.6,17,17,17s17-7.6,17-17S30.4,3,21,3z%20M21,33c-7.2,0-13-5.8-13-13c0-7.2,5.8-13,13-13c7.2,0,13,5.8,13,13C34,27.2,28.2,33,21,33z'/%3e%3cline%20fill='%2382858B'%20stroke='%2382858B'%20stroke-width='6'%20stroke-miterlimit='10'%20x1='31.2'%20y1='31.2'%20x2='44.5'%20y2='44.5'/%3e%3c/svg%3e"
+            alt="SearchIcon" width="25"></div>
+        <input class="w-full h-full py-2 text-sm bg-[#F0F0F1] rounded-3xl outline-none" type="text" name="desktopSearch"
+          id="desktopSearch" placeholder="جستجو">
+      </div>
     </div>
+    <div class="HeaderToggleDiv hidden w-full h-screen fixed top-0 bg-black/20 bannerZindex ">
+    </div>
+    <button class="HeaderToggleButton w-[93%] m-auto flex justify-between items-center gap-1 bg-white">
+      <div class="flex items-center gap-2"><img src="./Images/SVG/location.svg" alt="location">
+        <div class="text-[12px] text-black leading-[30px] deliveryCity ">انتخاب شهر</div>
+      </div>
+      <img src="data:image/svg+xml,%3csvg%20xmlns:xlink='http://www.w3.org/1999/xlink'%20xmlns='http://www.w3.org/2000/svg'%20style='width:%2016px;%20height:%2016px;%20fill:%23000'%20width='24'%20height='24'%20%3e%3cdefs%3e%3csymbol%20id='chevronLeft'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%3e%3cpath%20d='M11.414%2012l4.293%204.293-1.414%201.414-5-5a1%201%200%20010-1.414l5-5%201.414%201.414L11.414%2012z'%3e%3c/path%3e%3c/symbol%3e%3c/defs%3e%3cuse%20xlink:href='%23chevronLeft'%3e%3c/use%3e%3c/svg%3e" alt="">
+    </button>
   </div>
   <div
     class="bannerZindex lg:hidden w-full h-[50px] fixed bottom-0 shadow-md shadow-black flex justify-around items-center bg-white">
@@ -51,77 +63,127 @@
   <!--header mobile End-->
 
   <!--header Desktop Start-->
-  <div class="hidden lg:block sticky top-0 left-0 bannerZindex bg-white shadow-gray-400 shadow-sm">
-    <div class="">
-      <img src="./Images/header/banner.png" alt="banner">
+  <div class="hidden lg:block sticky top-0 left-0 bannerZindex shadow-gray-400 shadow-sm">
+    <div class="h-[57px] bg-white ">
+      <img src="./Images/header/banner.png" alt="banner" class="h-[57px] object-cover">
     </div>
-    <div class="w-full px-[20px]  lg:flex justify-between ">
-      <div class="p-[10px] flex gap-[10px]">
-        <img width="195px" height="30px" src="./Images/SVG/digikalaIcon.svg" alt="">
-        <input class="w-[540px] h-[40px] bg-[#F0F0F1] rounded-lg" type="text" name="desktopSearch" id="desktopSearch">
-      </div>
-      <div class="flex gap-4 items-center">
-        <div class="w-fit p-[7px] rounded-lg border-solid border-[0.7px] border-black/40 flex gap-1">
-          <img src="./Images/SVG/loginIcon.svg" alt="">
-          <div class="">ورود | ثبت نام</div>
+    <div class="relative">
+      <div class="w-full px-[20px]  lg:flex justify-between bg-white HeaderZindexOne relative">
+        <div class="p-[10px] flex gap-[10px]">
+          <img width="195px" height="30px" src="./Images/SVG/digikalaIcon.svg" alt="Icon">
+          <div class="w-[540px] h-[40px] flex  bg-[#F0F0F1] rounded-lg">
+            <div class=" h-full w-[50px] flex justify-center items-center"><img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='utf-8'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2018.1.1,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%2050%2050'%20width='50px'%20height='50px'%3e%3cpath%20fill='%2382858B'%20d='M21,3C11.6,3,4,10.6,4,20s7.6,17,17,17s17-7.6,17-17S30.4,3,21,3z%20M21,33c-7.2,0-13-5.8-13-13c0-7.2,5.8-13,13-13c7.2,0,13,5.8,13,13C34,27.2,28.2,33,21,33z'/%3e%3cline%20fill='%2382858B'%20stroke='%2382858B'%20stroke-width='6'%20stroke-miterlimit='10'%20x1='31.2'%20y1='31.2'%20x2='44.5'%20y2='44.5'/%3e%3c/svg%3e"
+                alt="SearchIcon" width="25"></div>
+            <input class="w-full h-full py-2 text-sm bg-[#F0F0F1] rounded-lg outline-none" type="text"
+              name="desktopSearch" id="desktopSearch" placeholder="جستجو">
+          </div>
         </div>
-        <span class="w-[0.5px] h-[25px] bg-black/40 block"></span>
-        <div class=""><img src="./Images/SVG/cardShop.svg" alt=""></div>
+        <div class="flex gap-4 items-center">
+          <div class="w-fit p-[7px] rounded-lg border-solid border-[0.7px] border-black/40 flex items-center gap-1">
+            <img src="./Images/SVG/loginIcon.svg" alt="">
+            <div class="text-[13px]">ورود | ثبت نام</div>
+          </div>
+          <span class="w-[0.5px] h-[25px] bg-black/40 block"></span>
+          <div><img src="./Images/SVG/cardShop.svg" alt=""></div>
+        </div>
       </div>
-    </div>
-    <div class="w-full h-[35px] px-[30px] flex justify-between items-center  bg-white">
-      <div class="flex gap-3 items-center ">
-        <a class="animatedLink flex gap-2 justify-center items-end ml-3" href="">
-          <img width="24px" height="24px" src="./Images/SVG/hamburgerMenu.svg" alt="">
-          <div class="">دسته بندی ها</div>
-        </a>
-        <span class="block bg-black/20 w-[1px] h-[15px]"></span>
-        <a class="animatedLink  flex items-center justify-center gap-1" href="#">
-          <img width="17px" height="17px" src="./Images/SVG/AmazingPage.svg" alt="amazingPage">
-          <div class="text-[13px] text-[#A1A3A8]">شگفت انگیزها
+      <div
+        class="w-full h-[32px] px-[30px] flex justify-between items-cente bg-white absolute top-[60px] headerMenuTransition  HeaderZindexTwo shadow-md">
+        <div class="flex gap-3 items-center ">
+          <div class="relative ">
+            <button class="animatedLinkMain h-[32px] flex gap-2 justify-center items-center ml-3" id="menu-link">
+              <img width="24px" height="24px" src="./Images/SVG/hamburgerMenu.svg" alt="Hamburger Menu">
+              <div>دسته‌بندی‌ها</div>
+            </button>
+            <div id="overlayMenu"
+              class="bannerZindex w-full hCostumSubMenu hidden fixed right-0 bottom-0 bg-black bg-opacity-50 z-10">
+            </div>
+            <div id="submenu"
+              class="bannerZindex hidden fixed top-[146px] right-[25px] w-[80vw] h-[60vh] bg-white z-20  borderMenu overflow-hidden">
+              <div class="flex h-full">
+                <div class="w-[18%] h-full bg-[#F0F0F1]  MegaMenuItems flex flex-col overflow-y-auto "
+                  id="categories-list">
+                </div>
+                <div class="w-[82%]  flex gap-6 p-3 overflow-y-auto" id="item-details">
+                </div>
+              </div>
+            </div>
           </div>
-        </a>
-        <a class="animatedLink  flex items-center justify-center gap-1" href="#">
-          <img width="17px" height="17px" src="./Images/SVG/superMarket.svg" alt="amazingPage">
-          <div class="text-[13px] text-[#A1A3A8]">سوپرمارکت
-          </div>
-        </a>
-        <a class="animatedLink  flex items-center justify-center gap-1" href="#">
-          <img width="17px" height="17px" src="./Images/SVG/giftCard.svg" alt="amazingPage">
-          <div class="text-[13px] text-[#A1A3A8]">کارت هدیه
-          </div>
-        </a>
-        <a class="animatedLink  flex items-center justify-center gap-1" href="#">
-          <img width="17px" height="17px" src="./Images/SVG/mostSell.svg" alt="amazingPage">
-          <div class="text-[13px] text-[#A1A3A8]">پرفروش ترین
-          </div>
-        </a>
-        <a class="animatedLink  flex items-center justify-center gap-1" href="#">
-          <img width="17px" height="17px" src="./Images/SVG/offers.svg" alt="amazingPage">
-          <div class="text-[13px] text-[#A1A3A8]">تخفیف ها و پسشنهادات
-          </div>
-        </a>
-        <span class="block bg-black/20 w-[1px] h-[15px]"></span>
-        <a class="animatedLink  flex items-center justify-center gap-1" href="#">
-          <div class="text-[13px] text-[#A1A3A8]">سوالی دارید؟
-          </div>
-        </a>
-        <a class="animatedLink  flex items-center justify-center gap-1" href="#">
-          <div class="text-[13px] text-[#A1A3A8]">در دیجیکالا بفروشید!
-          </div>
-        </a>
+          <span class="block bg-black/20 w-[1px] h-[15px]"></span>
+          <a class="animatedLink  flex items-center justify-center gap-1 pb-1" href="#">
+            <img width="17px" height="17px" src="./Images/SVG/AmazingPage.svg" alt="amazingPage">
+            <div class="text-[13px] text-[#A1A3A8]">شگفت انگیزها
+            </div>
+          </a>
+          <a class="animatedLink  flex items-center justify-center gap-1 pb-1" href="#">
+            <img width="17px" height="17px" src="./Images/SVG/superMarket.svg" alt="amazingPage">
+            <div class="text-[13px] text-[#A1A3A8]">سوپرمارکت
+            </div>
+          </a>
+          <a class="animatedLink  flex items-center justify-center gap-1 pb-1" href="#">
+            <img width="17px" height="17px" src="./Images/SVG/giftCard.svg" alt="amazingPage">
+            <div class="text-[13px] text-[#A1A3A8]">کارت هدیه
+            </div>
+          </a>
+          <a class="animatedLink  flex items-center justify-center gap-1 pb-1" href="#">
+            <img width="17px" height="17px" src="./Images/SVG/mostSell.svg" alt="amazingPage">
+            <div class="text-[13px] text-[#A1A3A8]">پرفروش ترین
+            </div>
+          </a>
+          <a class="animatedLink  flex items-center justify-center gap-1 pb-1" href="#">
+            <img width="17px" height="17px" src="./Images/SVG/offers.svg" alt="amazingPage">
+            <div class="text-[13px] text-[#A1A3A8]">تخفیف ها و پسشنهادات
+            </div>
+          </a>
+          <span class="block bg-black/20 w-[1px] h-[15px]"></span>
+          <a class="animatedLink  flex items-center justify-center gap-1 pb-1" href="#">
+            <div class="text-[13px] text-[#A1A3A8]">سوالی دارید؟
+            </div>
+          </a>
+          <a class="animatedLink hidden  xl:flex items-center justify-center gap-1 pb-1" href="#">
+            <div class="text-[13px] text-[#A1A3A8]">در دیجیکالا بفروشید!
+            </div>
+          </a>
+        </div>
+        <button class="flex items-center gap-1 HeaderToggleButton">
+          <img src="./Images/SVG/location.svg" alt="location">
+          <div class="text-[13px] text-black/40 deliveryCity ">انتخاب شهر</div>
+        </button>
       </div>
-      <a href="#" class="flex items-center gap-1">
-        <img src="./Images/SVG/location.svg" alt="location">
-        <div class="text-[13px] text-black/40">ارسال به تهران, تهران</div>
-      </a>
     </div>
 
+
   </div>
+  <div class="HeaderToggleDiv hidden w-full h-screen fixed top-0  bg-black/20 bannerZindex ">
+  </div>
+  <div
+    class="hidden w-full h-screen rounded-none lg:w-[400px] lg:h-[80vh] fixed top-[50%] left-[50%] bg-white lg:rounded-xl CenterItem bannerZindex overflow-hidden HeaderToggleDiv">
+    <div class="flex justify-between items-center p-4">
+      <div class="font-bold">انتخاب شهر</div>
+      <button class="CrossButtonHeader"><img src="data:image/svg+xml,%3csvg%20xmlns:xlink='http://www.w3.org/1999/xlink'%20xmlns='http://www.w3.org/2000/svg'%20data-test-id='close-modal-icon-button'%20style='width:%2024px;%20height:%2024px;%20fill:%20var(--color-icon-high-emphasis);'%20width='24'%20height='24'%20%3e%3cdefs%3e%3csymbol%20id='close'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%3e%3cpath%20fill-rule='evenodd'%20d='M18.364%207.05L16.95%205.636%2012%2010.586l-4.95-4.95L5.636%207.05l4.95%204.95-4.95%204.95%201.414%201.414%204.95-4.95%204.95%204.95%201.414-1.414-4.95-4.95%204.95-4.95z'%20clip-rule='evenodd'%3e%3c/path%3e%3c/symbol%3e%3c/defs%3e%3cuse%20xlink:href='%23close'%3e%3c/use%3e%3c/svg%3e" alt="cross"></button>
+    </div>
+    <hr>
+    <div class="w-full ">
+      <div class="w-[90%] h-[40px] m-auto flex rounded-3xl overflow-hidden bg-[#F0F0F1] mt-5">
+        <div class="w-[10%] h-[40px] flex justify-center items-center pr-2"><img
+            src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='utf-8'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2018.1.1,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%2050%2050'%20width='50px'%20height='50px'%3e%3cpath%20fill='%2382858B'%20d='M21,3C11.6,3,4,10.6,4,20s7.6,17,17,17s17-7.6,17-17S30.4,3,21,3z%20M21,33c-7.2,0-13-5.8-13-13c0-7.2,5.8-13,13-13c7.2,0,13,5.8,13,13C34,27.2,28.2,33,21,33z'/%3e%3cline%20fill='%2382858B'%20stroke='%2382858B'%20stroke-width='6'%20stroke-miterlimit='10'%20x1='31.2'%20y1='31.2'%20x2='44.5'%20y2='44.5'/%3e%3c/svg%3e" alt="searchICon" width="24"></div>
+        <input class="w-[90%] h-[40px] p-2 outline-none bg-[#F0F0F1] text-[12px]"
+          placeholder="جستجو در استان ها و شهر های تهران" type="text">
+      </div>
+      <div class="p-5 text-[14px]">برای مشاهده تخفیف‌ها و کالا‌های قابل ارسال به شهرتان، آن را انتخاب کنید.</div>
+      <div class="px-5">
+        <swiper-container class="popularCities" slides-per-view="4.5" space-between="0" free-mode="true">
+        </swiper-container>
+      </div>
+      <div class="allCiteis p-5 overflow-y-auto customHMobile  lg:customHDes mt-3" id="CityScrollCustom">
+      </div>
+    </div>
+  </div>
+
   <!--header Desktop End-->
 
   <!--Story Start-->
-  <div class="w-[95%] lg:w-[80%] h-[130px] m-auto">
+  <div class="w-[95%] lg:w-[80%] h-[130px] m-auto lg:mt-[35px] ">
     <div class="relative">
       <swiper-container class="storySlider" slides-per-view="4" space-between="10" breakpoints='{
           "400": {"slidesPerView": 5},
@@ -132,11 +194,9 @@
       }'>
       </swiper-container>
 
-      <div class="custom-next"><img width="20px" height="20px" src="./Images/MainIcons/right-arrow.svg"
-          alt="Next">
+      <div class="custom-next"><img width="20px" height="20px" src="./Images/MainIcons/right-arrow.svg" alt="Next">
       </div>
-      <div class="custom-prev"><img width="20px" height="20px" src="./Images/MainIcons/left-arrow.svg"
-          alt="Prev">
+      <div class="custom-prev"><img width="20px" height="20px" src="./Images/MainIcons/left-arrow.svg" alt="Prev">
       </div>
     </div>
   </div>
@@ -163,7 +223,33 @@
   <!--Main Slider End-->
 
   <!--Icon start-->
-  <div class="iconItems w-[95%] lg:w-[80%] h-fit m-auto flex flex-wrap justify-between items-center"></div>
+  <div class="iconItems w-[95%] lg:w-[80%] h-fit m-auto flex flex-wrap justify-between items-center">
+    <button id="IconsToggle1"
+      class="w-[20%] lg:w-[10%] md:w-[18%] h-fit p-[20px] flex justify-between items-center flex-col gap-y-2">
+      <img width="52px" height="52px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAk0lEQVR4nO3UTQrCQAyG4blGvmnXnt0ieDEr6gWUQBa12EIE4+Z9IKv5SGD+WgMAAAAAAJskjZJOkh5RZ0mHf+VTvLmZzZKeyzKzq69V59NiZ96aL4ZM1fm0ONKPAyTdq/NpewPM7FadT4sHtTXgWJ1P898gHtS6+aX3PlTnvxI/xeR30st3Zq/5r/MAAAAAAKC1F2ZZyvyl+EZ7AAAAAElFTkSuQmCC" alt="بیشتر">
+      <div class="h-[40px] text-[12px] text-center">بیشتر</div>
+    </button>
+  </div>
+  <div id="ToggleBox1" class="hidden fixed top-0 left-0 w-full h-screen bg-black/20 bannerZindex">
+  </div>
+  <div id="ToggleBox2"
+    class="hidden fixed top-[50%] left-[50%] bannerZindex w-full h-screen rounded-none lg:w-[700px] lg:h-[70vh] bg-white CenterItem lg:rounded-xl overflow-hidden">
+    <div class="h-[60px] p-4 flex justify-between items-center">
+      <div class="flex gap-2">
+        <img src="data:image/svg+xml,%3csvg%20xmlns:xlink='http://www.w3.org/1999/xlink'%20xmlns='http://www.w3.org/2000/svg'%20style='width:%2024px;%20height:%2024px;%20fill:%23EF4156%20'%20width='24'%20height='24'%20%3e%3cdefs%3e%3csymbol%20id='dkSmile'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%3e%3cpath%20d='M2.22%2012.704a.966.966%200%2001.194-1.405l1.61-1.126a.971.971%200%20011.294.172A8.826%208.826%200%200012%2013.413a8.825%208.825%200%20006.682-3.068.971.971%200%20011.295-.172l1.609%201.126a.965.965%200%2001.194%201.405A12.72%2012.72%200%200112%2017.3a12.72%2012.72%200%2001-9.78-4.597z'%3e%3c/path%3e%3c/symbol%3e%3c/defs%3e%3cuse%20xlink:href='%23dkSmile'%3e%3c/use%3e%3c/svg%3e" alt="Smile">
+        <div class="font-bold">خدمات دیجیکالا</div>
+      </div>
+      <button id="IconCloseCross"><img src="data:image/svg+xml,%3csvg%20xmlns:xlink='http://www.w3.org/1999/xlink'%20xmlns='http://www.w3.org/2000/svg'%20data-test-id='close-modal-icon-button'%20style='width:%2024px;%20height:%2024px;%20fill:%20var(--color-icon-high-emphasis);'%20width='24'%20height='24'%20%3e%3cdefs%3e%3csymbol%20id='close'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%3e%3cpath%20fill-rule='evenodd'%20d='M18.364%207.05L16.95%205.636%2012%2010.586l-4.95-4.95L5.636%207.05l4.95%204.95-4.95%204.95%201.414%201.414%204.95-4.95%204.95%204.95%201.414-1.414-4.95-4.95%204.95-4.95z'%20clip-rule='evenodd'%3e%3c/path%3e%3c/symbol%3e%3c/defs%3e%3cuse%20xlink:href='%23close'%3e%3c/use%3e%3c/svg%3e" alt="Cross"></button>
+    </div>
+    <hr>
+    <div class="overflow-y-auto hCustomDigiServicesMobile lg:hCustomDigiServicesDes">
+      <div class="HighlightDigiServeses flex flex-wrap justify-around items-start my-6">
+      </div>
+      <div class="text-black/50 text-[14px] p-5 font-bold">سرویس های گروه دیجیکالا</div>
+      <div class="allDigiServices w-full flex-wrap block lg:flex justify-around items-center">
+      </div>
+    </div>
+  </div>
   <!--Icon End-->
 
   <!--Amazing Slider Start-->
@@ -192,8 +278,8 @@
         </a>
       </swiper-slide>
     </swiper-container>
-    <div class="custom-nextamazingSlider"><img width="20px" height="20px"
-        src="./Images/MainIcons/right-arrow.svg" alt="Next">
+    <div class="custom-nextamazingSlider"><img width="20px" height="20px" src="./Images/MainIcons/right-arrow.svg"
+        alt="Next">
     </div>
     <div class="custom-prevamazingSlider"><img width="20px" height="20px" src="./Images/MainIcons/left-arrow.svg"
         alt="Prev">
@@ -250,7 +336,7 @@
   <!--partnerShip 3 End-->
 
   <!--Most popular Brands Start-->
-  <div class="w-full lg:w-[90%] 2xl:w-[80%] m-auto border-black/20 border-solid border-[1px] rounded-[15px] my-4">
+  <div class="w-[96%] lg:w-[90%] 2xl:w-[80%] m-auto border-black/20 border-solid border-[1px] rounded-[15px] my-4">
     <div class="flex justify-center items-center gap-3 h-[50px]">
       <img src="./Images/SVG/starSVG.svg" alt="">
       <div class="text-[20px]">محبوب ترین برند ها</div>
@@ -263,11 +349,9 @@
         "900": {"slidesPerView": 9},
         "1250": {"slidesPerView": 8.5}
     }'></swiper-container>
-      <div class="custom-nextBrand"><img width="20px" height="20px" src="./Images/MainIcons/right-arrow.svg"
-          alt="Next">
+      <div class="custom-nextBrand"><img width="20px" height="20px" src="./Images/MainIcons/right-arrow.svg" alt="Next">
       </div>
-      <div class="custom-prevBrand"><img width="20px" height="20px" src="./Images/MainIcons/left-arrow.svg"
-          alt="Prev">
+      <div class="custom-prevBrand"><img width="20px" height="20px" src="./Images/MainIcons/left-arrow.svg" alt="Prev">
       </div>
     </div>
   </div>
@@ -280,13 +364,13 @@
 
   <!--Client taste Start-->
   <div
-    class="clientTasteItems w-full lg:w-[90%] 2xl:w-[80%] m-auto my-[30px] border-black/20 border-solid border-[1px] rounded-[15px] flex justify-between flex-wrap">
+    class="clientTasteItems w-[96%] lg:w-[90%] 2xl:w-[80%] m-auto my-[30px] border-black/20 border-solid border-[1px] rounded-[15px] flex justify-between flex-wrap">
   </div>
   <!--Client taste End-->
 
   <!--Most Selled Product start-->
   <div
-    class="w-full lg:w-[90%] 2xl:w-[80%] m-auto border-black/20 border-solid border-[1px] rounded-[15px] my-4 flex flex-col gap-y4">
+    class="w-[96%] lg:w-[90%] 2xl:w-[80%] m-auto border-black/20 border-solid border-[1px] rounded-[15px] my-4 flex flex-col gap-y4">
     <div class="h-[50px] flex justify-center items-end gap-2 font-bold text-[16px]">
       <img src="./Images/SVG/mostSellProducts.svg" alt="">
       پرفروش ترین کالا ها
@@ -313,13 +397,13 @@
 
   <!--Client taste 2 Start-->
   <div
-    class="clientTasteItems2 w-full lg:w-[90%] 2xl:w-[80%] m-auto my-[30px] border-black/20 border-solid border-[1px] rounded-[15px] flex justify-between flex-wrap">
+    class="clientTasteItems2 w-[96%] lg:w-[90%] 2xl:w-[80%] m-auto my-[30px] border-black/20 border-solid border-[1px] rounded-[15px] flex justify-between flex-wrap">
   </div>
   <!--Client taste 2 End-->
 
   <!--Selected offer Products  -->
   <div
-    class="w-full lg:w-[90%] 2xl:w-[80%] h-fit m-auto my-[40px] border-solid border-[0.5px] border-black/20 rounded-[15px]">
+    class="w-[96%] lg:w-[90%] 2xl:w-[80%] h-fit m-auto my-[40px] border-solid border-[0.5px] border-black/20 rounded-[15px]">
     <div class="text-center flex justify-center items-center gap-2 my-4 font-bold text-[17px]">
       <img src="./Images/SVG/offerIcon.svg" alt="">
       منتخب محصولات تخفیف و حراج
@@ -412,12 +496,12 @@
         <div class="text-white">دانلود اپلیکیشن دیجیکالا</div>
       </div>
       <div class=" flex justify-center items-center gap-4">
-        <div class="w-[142px] h-[44px] bg-white flex justify-center items-center"><img
-            src="./Images/SVG/bazar.svg" alt="threeDot"></div>
-        <div class="w-[142px] h-[44px] bg-white flex justify-center items-center"><img
-            src="./Images/SVG/mayket.svg" alt="threeDot"></div>
-        <div class="w-[142px] h-[44px] bg-white flex justify-center items-center"><img
-            src="./Images/SVG/sibApp.svg" alt="threeDot"></div>
+        <div class="w-[142px] h-[44px] bg-white flex justify-center items-center"><img src="./Images/SVG/bazar.svg"
+            alt="threeDot"></div>
+        <div class="w-[142px] h-[44px] bg-white flex justify-center items-center"><img src="./Images/SVG/mayket.svg"
+            alt="threeDot"></div>
+        <div class="w-[142px] h-[44px] bg-white flex justify-center items-center"><img src="./Images/SVG/sibApp.svg"
+            alt="threeDot"></div>
         <div class="w-[44px] h-[44px] bg-white flex justify-center items-center rounded-md ml-[20px]"><img
             src="./Images/SVG/threeDot.svg" alt="threeDot"></div>
       </div>
@@ -871,7 +955,7 @@
         class="cursor-pointer">
     </div>
 
-    <div class="overflow-y-auto h-[350px]">
+    <div class="overflow-y-auto h-[350px]" id="SupportScroolCustom">
       <div class="font-bold text-[18px] px-3 pt-3">سلام &#128075; &#128075;</div>
       <div class="p-3">اینجا میتونید تعدادی از پرسش های متداول را ببینید یا در صورت تمایل با ما آنلاین گفتگو کنید!</div>
 
@@ -927,54 +1011,70 @@
   </div>
   <!--Support Icon End-->
 
-<!--SuperMarket Pop Up Start-->
-<button
-  class="SuperMarketPopUp w-[130px] h-[50px] rounded-[30px] bg-[#069A4A] fixed bottom-[30px] left-[30px] flex justify-center items-center gap-2 bannerZindex rtl"
-  onclick="togglePopUp()">
-  <img src="./Images/SuperMarketPopUp/Basket.png" alt="Basket" width="28" height="28">
-  <div class="text-white">سوپرمارکت</div>
-</button>
-<div id="overlay"
-  class="w-full h-screen fixed top-0 bg-black opacity-20 bannerZindex flex justify-center items-center hidden"
-  onclick="togglePopUp()">
-</div>
-<div id="popup"
-  class="w-[450px] h-[320px] p-4 fixed top-[50%] left-[50%] rounded-xl bg-white CenterItem bannerZindex text-black hidden">
-  <div class="flex justify-between items-center mb-4">
-    <div class="">
-      <div class="mb-1">یکی از سوپر مارکت های زیر را انتخاب کنید</div>
-      <div class="text-[12px] text-black/50">فقط در شهر های تهران و کرج</div>
-    </div>
-    <button onclick="togglePopUp()"><img src="./Images/SVG/Cross.svg" alt=""></button>
+  <!-- SuperMarket Pop Up Start -->
+  <button
+    class="SuperMarketPopUp w-[130px] h-[50px] hidden md:flex rounded-[30px] bg-[#069A4A] fixed bottom-[30px] left-[30px] justify-center items-center gap-2 SuperZindex rtl"
+    onclick="togglePopUp()">
+    <img src="./Images/SuperMarketPopUp/Basket.png" alt="Basket" width="28" height="28">
+    <div class="text-white">سوپرمارکت</div>
+  </button>
+
+  <div id="overlay"
+    class="w-full h-screen fixed top-0 bg-black opacity-20 bannerZindex flex justify-center items-center hidden"
+    onclick="togglePopUp()">
   </div>
-  <div class="flex justify-between items-center">
-    <div class="w-[48%] h-[220px] bg-[#DCF3E6] rounded-xl flex flex-col justify-between cursor-pointer ">
-      <div class="p-3">
-        <div class="mb-2">پرتخفیف و متنوع</div>
-        <div
-          class="bg-[#069A4A] w-[55%] h-[25px] SuperMarketRound flex justify-around items-center text-[12px] text-white p-1">
-          <img src="./Images/SVG/Shipping.svg" alt="Shipping" width="20" height="20">
-          ارسال امروز
-        </div>
+
+  <div id="popup"
+    class="w-[450px] h-[320px] p-4 fixed top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 rounded-xl bg-white bannerZindex text-black hidden">
+    <div class="flex justify-between items-center mb-4">
+      <div>
+        <div class="mb-1">یکی از سوپر مارکت های زیر را انتخاب کنید</div>
+        <div class="text-[12px] text-black/50">فقط در شهر های تهران و کرج</div>
       </div>
-      <img src="./Images/SuperMarketPopUp/fresh-shop-basket.png" alt="fresh-shop-basket" width="140" class="self-end">
+      <button onclick="togglePopUp()"><img src="./Images/SVG/Cross.svg" alt="بستن"></button>
     </div>
-    <div class="w-[48%] h-[220px] bg-[#FEEBDE] rounded-xl flex flex-col justify-between cursor-pointer ">
-      <div class="p-3">
-        <div class="mb-2">ارسال سریع</div>
-        <div
-          class="bg-[#FF8042] w-[55%] h-[25px] SuperMarketRound flex justify-around items-center text-[12px] text-white p-1">
-          <img src="./Images/SVG/Clock.svg" alt="clock" width="20" height="20">
-          45 دقیقه ای
+    <div class="flex justify-between items-center">
+      <div class="w-[48%] h-[220px] bg-[#DCF3E6] rounded-xl flex flex-col justify-between cursor-pointer">
+        <div class="p-3">
+          <div class="mb-2">پرتخفیف و متنوع</div>
+          <div
+            class="bg-[#069A4A] w-[55%] h-[25px] SuperMarketRound flex justify-around items-center text-[12px] text-white p-1">
+            <img src="./Images/SVG/Shipping.svg" alt="Shipping" width="20" height="20">
+            ارسال امروز
+          </div>
         </div>
+        <img src="./Images/SuperMarketPopUp/fresh-shop-basket.png" alt="fresh-shop-basket" width="140" class="self-end">
       </div>
-      <img src="./Images/SuperMarketPopUp/jet-shop-basket.png" alt="jet-shop-basket" width="140" class="self-end">
+      <div class="w-[48%] h-[220px] bg-[#FEEBDE] rounded-xl flex flex-col justify-between cursor-pointer">
+        <div class="p-3">
+          <div class="mb-2">ارسال سریع</div>
+          <div
+            class="bg-[#FF8042] w-[55%] h-[25px] SuperMarketRound flex justify-around items-center text-[12px] text-white p-1">
+            <img src="./Images/SVG/Clock.svg" alt="Clock" width="20" height="20">
+            45 دقیقه ای
+          </div>
+        </div>
+        <img src="./Images/SuperMarketPopUp/jet-shop-basket.png" alt="jet-shop-basket" width="140" class="self-end">
+      </div>
     </div>
   </div>
-</div>
-<!--SuperMarket Pop Up End-->
+  <!-- SuperMarket Pop Up End -->
 
   <!--Project End-->
+  <script>
+    const header = document.querySelector('.HeaderZindexTwo');
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > lastScrollY) {
+        header.classList.add('HeaderInimation'); // هنگام اسکرول به پایین، کلاس "hidden" اضافه شود
+      } else {
+        header.classList.remove('HeaderInimation'); // هنگام اسکرول به بالا، کلاس "hidden" حذف شود
+      }
+      lastScrollY = window.scrollY;
+    });
+
+  </script>
   <script>
     const swiper = document.querySelector('.storySlider');
 
@@ -1055,47 +1155,185 @@
 
     toggleButton.addEventListener('click', () => {
       toggleDiv.classList.toggle('hidden');
+      // غیرفعال کردن اسکرول هنگام باز شدن
+      if (!toggleDiv.classList.contains('hidden')) {
+        body.style.overflow = 'hidden';
+      } else {
+        body.style.overflow = 'auto';
+      }
     });
 
     closeButton.addEventListener('click', () => {
       toggleDiv.classList.add('hidden');
+      // فعال کردن اسکرول هنگام بسته شدن
+      body.style.overflow = 'auto';
     });
 
     function toggleAccordion(contentId, iconId) {
       const content = document.getElementById(contentId);
       const icon = document.getElementById(iconId);
-
-      // نمایش یا مخفی کردن محتوا
       content.classList.toggle('hidden');
-
-      // چرخاندن فلش
       icon.classList.toggle('rotate-180');
     }
   </script>
-<script>
-  function togglePopUp() {
-    // پیدا کردن دیوها
-    const overlay = document.getElementById('overlay');
-    const popup = document.getElementById('popup');
+  <script>
+    function togglePopUp() {
+      const overlay = document.getElementById('overlay');
+      const popup = document.getElementById('popup');
 
-    // چک کردن وضعیت نمایش دیوها
-    const isVisible = overlay.classList.contains('hidden');
+      const isHidden = overlay.classList.contains('hidden');
 
-    if (isVisible) {
-      // نمایش دیوها
-      overlay.classList.remove('hidden');
-      popup.classList.remove('hidden');
-      // غیرفعال کردن اسکرول
+      if (isHidden) {
+        overlay.classList.remove('hidden');
+        popup.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      } else {
+        overlay.classList.add('hidden');
+        popup.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+    }
+  </script>
+  <script>
+    const headerToggleButtons = document.querySelectorAll('.HeaderToggleButton');
+    const headerToggleDivs = document.querySelectorAll('.HeaderToggleDiv');
+    const crossButtons = document.querySelectorAll('.CrossButtonHeader');
+
+    function showDivs() {
+      headerToggleDivs.forEach((div) => div.classList.remove('hidden'));
       document.body.style.overflow = 'hidden';
-    } else {
-      // پنهان کردن دیوها
-      overlay.classList.add('hidden');
-      popup.classList.add('hidden');
-      // فعال کردن اسکرول
+    }
+
+    function hideDivs() {
+      headerToggleDivs.forEach((div) => div.classList.add('hidden'));
       document.body.style.overflow = 'auto';
     }
-  }
-</script>
+
+    headerToggleButtons.forEach((button) => {
+      button.addEventListener('click', showDivs);
+    });
+
+    crossButtons.forEach((button) => {
+      button.addEventListener('click', hideDivs);
+    });
+
+    headerToggleDivs.forEach((div) => {
+      div.addEventListener('click', hideDivs);
+    });
+  </script>
+  <script>
+    document.getElementById('IconsToggle').addEventListener('click', () => {
+      const box1 = document.getElementById('ToggleBox1');
+      const box2 = document.getElementById('ToggleBox2');
+
+      // اگر دیوها مخفی هستند، نمایش داده شوند
+      if (box1.classList.contains('hidden') && box2.classList.contains('hidden')) {
+        box1.classList.remove('hidden');
+        box2.classList.remove('hidden');
+      } else {
+        // در غیر این صورت، مخفی شوند
+        box1.classList.add('hidden');
+        box2.classList.add('hidden');
+      }
+    });
+
+    document.getElementById('ToggleBox1').addEventListener('click', (event) => {
+      event.stopPropagation();
+      const box1 = document.getElementById('ToggleBox1');
+      const box2 = document.getElementById('ToggleBox2');
+      box1.classList.add('hidden');
+      box2.classList.add('hidden');
+    });
+
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('IconsToggle1').addEventListener('click', () => {
+        const box1 = document.getElementById('ToggleBox1');
+        const box2 = document.getElementById('ToggleBox2');
+
+        if (box1.classList.contains('hidden') && box2.classList.contains('hidden')) {
+          box1.classList.remove('hidden');
+          box2.classList.remove('hidden');
+        } else {
+          box1.classList.add('hidden');
+          box2.classList.add('hidden');
+        }
+      });
+
+      document.getElementById('ToggleBox1').addEventListener('click', (event) => {
+        event.stopPropagation();
+        const box1 = document.getElementById('ToggleBox1');
+        const box2 = document.getElementById('ToggleBox2');
+
+        box1.classList.add('hidden');
+        box2.classList.add('hidden');
+      });
+
+      const iconCloseCross = document.getElementById("IconCloseCross");
+      if (iconCloseCross) {
+        iconCloseCross.addEventListener('click', () => {
+          const box1 = document.getElementById('ToggleBox1');
+          const box2 = document.getElementById('ToggleBox2');
+
+          box1.classList.add('hidden');
+          box2.classList.add('hidden');
+        });
+      }
+    });
+  </script>
+  <script>
+    const menuLink = document.getElementById("menu-link");
+      const overlay = document.getElementById("overlayMenu");
+      const submenu = document.getElementById("submenu");
+      const headerx = document.querySelector(".HeaderZindexTwo"); // انتخاب دیو با کلاس HeaderxZindexTwo
+
+      const scrollIncrement = -1; // میزان افزایش اسکرول (100 پیکسل)
+
+      // 1. ایونت لیسنر برای `mouseenter` روی `menuLink`
+      menuLink.addEventListener("mouseenter", () => {
+        // غیرفعال کردن اسکرول
+        document.body.style.overflow = "hidden";
+
+        // افزایش اسکرول صفحه
+        window.scrollBy(0, scrollIncrement);
+
+        // نمایش منو و overlay
+        overlay.classList.remove("hidden");
+        submenu.classList.remove("hidden");
+
+        // اضافه کردن کلاس CustomTop به HeaderxZindexTwo
+        headerx.classList.add("CustomTop");
+      });
+
+      // 2. ایونت لیسنر برای `mouseleave` روی `overlay`
+      overlay.addEventListener("mouseleave", () => {
+        // فعال کردن مجدد اسکرول
+        document.body.style.overflow = "auto";
+
+        // پنهان کردن منو و overlay
+        overlay.classList.add("hidden");
+        submenu.classList.add("hidden");
+
+        // حذف کلاس CustomTop از HeaderxZindexTwo
+        headerx.classList.remove("CustomTop");
+      });
+
+      // 3. ایونت لیسنر برای `mouseleave` روی `submenu`
+      submenu.addEventListener("mouseleave", () => {
+        // فعال کردن مجدد اسکرول
+        document.body.style.overflow = "auto";
+
+        // پنهان کردن منو و overlay
+        overlay.classList.add("hidden");
+        submenu.classList.add("hidden");
+
+        // حذف کلاس CustomTop از HeaderxZindexTwo
+        headerx.classList.remove("CustomTop");
+      });
+
+
+  </script>
 </body>
 
 </html>
